@@ -22,7 +22,7 @@ private val GALLERY_TAGS = setOf(
  * Test set for the functionalities of the ``EHGallery`` class.
  *
  * @author [Ignacio Slater Muñoz](islaterm@gmail.com)
- * @version 1.0.1.2
+ * @version 1.0.1.3
  * @since 1.0
  */
 internal class EHGalleryTest {
@@ -44,7 +44,7 @@ internal class EHGalleryTest {
   @Test
   fun testGalleryFetch() {
     val testEHGallery = testFetcher.getGallery(GALLERY_LINK)
-    assertEquals(GALLERY_LINK, testEHGallery.galleryLink)
+    assertEquals(GALLERY_LINK, testEHGallery.link)
     assertEquals(GALLERY_TITLE, testEHGallery.title)
     assertEquals(GALLERY_THUMBNAIL_URL, testEHGallery.thumbnailURL)
     assertEquals(GALLERY_TAGS, testEHGallery.tags)

@@ -6,12 +6,12 @@ package ecchoice.scrapping
  * For information on the API's usage refer to [ehwiki](https://ehwiki.org/wiki/API).
  *
  * @author [Ignacio Slater Muñoz](islaterm@gmail.com)
- * @version 1.0.1.2
+ * @version 1.0.1.3
  * @since 1.0
  */
 class EHFetcher {
   fun getGallery(link: String): EHGallery {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    return EHGallery(link, "", "", setOf())
   }
 }
 
@@ -20,7 +20,7 @@ class EHFetcher {
  * [e-hentai](https://e-hentai.org)
  */
 data class EHGallery(
-  val galleryLink: String,
+  val link: String,
   val title: String,
   val thumbnailURL: String,
   val tags: Set<String>
