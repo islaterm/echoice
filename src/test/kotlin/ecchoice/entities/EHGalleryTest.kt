@@ -2,6 +2,7 @@ package ecchoice.entities
 
 import ecchoice.scrapping.EHFetcher
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 
 private const val GALLERY_LINK = "https://e-hentai.org/g/618395/0439fa3666/"
@@ -21,7 +22,7 @@ internal class EHGalleryTest {
    * Creates a new fetcher to request metadata from
    * [e-hentai's API](https://api.e-hentai.org/api.php)
    */
-  @org.junit.jupiter.api.BeforeEach
+  @BeforeEach
   fun setUp() {
     testFetcher = EHFetcher()
   }
@@ -33,7 +34,7 @@ internal class EHGalleryTest {
   @Test
   fun parseLinkTest() {
     val idTokenPair = testFetcher.parseURL(GALLERY_LINK)
-    assertEquals(Pair(618395, "0439fa3666"), idTokenPair)
+    assertEquals(Pair(618395L, "0439fa3666"), idTokenPair)
   }
 
   /**
