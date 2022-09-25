@@ -7,6 +7,7 @@
 _This work is licensed under a
 [Creative Commons Attribution 4.0 International License](
 http://creativecommons.org/licenses/by/4.0/)_
+
 ---
 
 Ecchoice (stylized **ecch**o**i**ce) is an app that _picks a poison_ suited to your tastes by using
